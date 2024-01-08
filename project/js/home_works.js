@@ -1,5 +1,5 @@
 
-
+//gmail_container Функция
 const GmailConatiner = document.getElementById('gmail_container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
@@ -12,7 +12,7 @@ loginBtn.addEventListener('click', () => {
     GmailConatiner.classList.remove("active");
 });
 
-
+//input_email Функция
 const inputEmail = document.querySelector('#input_email')
 const inputButton = document.querySelector('#input_button')
 const gmailResult = document.querySelector('#gmail_result1')
@@ -31,7 +31,7 @@ inputButton.addEventListener('click', (event) => {
     }
 });
 
-
+//input_email1 Функция2
 const inputEmail1 = document.querySelector('#input_email1')
 const inputButton1 = document.querySelector('#input_button1')
 const gmailResult1 = document.querySelector('#gmail_result')
@@ -50,3 +50,20 @@ inputButton1.addEventListener('click', (event) => {
     }
 });
 
+//move_inner_blok Функция
+let div_blok = document.getElementById('move_inner_blok');
+let move_content = document.getElementById('move_content');
+let limit = 348;
+let step = 1;
+let currentPosition = 0;
+
+function animateDiv() {
+    currentPosition += step;
+    move_content.style.left = currentPosition + 'px';
+
+    if (currentPosition >= limit) {
+        clearInterval(animateDivInterval);
+    }
+}
+
+let animateDivInterval = setInterval(animateDiv, 10);
