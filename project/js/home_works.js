@@ -57,13 +57,14 @@ let limit = 348;
 let step = 1;
 let currentPosition = 0;
 
-function animateDiv() {
+let animateDivInterval;
+
+const animateDiv = () => {
     currentPosition += step;
     move_content.style.left = currentPosition + 'px';
-
     if (currentPosition >= limit) {
         clearInterval(animateDivInterval);
-    }
-}
+    }   
+};
 
-let animateDivInterval = setInterval(animateDiv, 10);
+animateDivInterval = setInterval(animateDiv, 10);
