@@ -4,6 +4,7 @@ const GmailConatiner = document.getElementById('gmail_container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
+
 registerBtn.addEventListener('click', () => {
     GmailConatiner.classList.add("active");
 });
