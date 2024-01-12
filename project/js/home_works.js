@@ -52,27 +52,39 @@ inputButton1.addEventListener('click', (event) => {
 });
 
 //move_inner_blok Функция
-let div_blok = document.getElementById('move_inner_blok');
-let move_content = document.getElementById('move_content');
-let limit = 348;
-let step = 1;
-let currentPosition = 0;
+let x = 0;
+let y = 0;
+let xDirection = 1;
+let yDirection = 1;
 
-let animateDivInterval;
+function animateSmallBlock() {
+    const move_content = document.querySelector('.move_content');
+    const move_inner_blok = document.querySelector('.move_inner_blok');
+    
+    if (x + move_content.clientWidth >= move_inner_blok.clientWidth) {
+        xDirection = -1;
+    }
+    if (y + move_content.clientHeight >= move_inner_blok.clientHeight) {
+        yDirection = -1;
+    }
+    if (x <= 0) {
+        xDirection = 1;
+    }
+    if (y <= 0) {
+        yDirection = 1;
+    }
+    x += 1 * xDirection;
+    y += 1 * yDirection;
+    move_content.style.transform = `translate(${x}px, ${y}px)`;
+    requestAnimationFrame(animateSmallBlock);
+}
 
-const animateDiv = () => {
-    currentPosition += step;
-    move_content.style.left = currentPosition + 'px';
-    if (currentPosition >= limit) {
-        clearInterval(animateDivInterval);
-    }   
-};
-
-animateDivInterval = setInterval(animateDiv, 10);
+animateSmallBlock();
 
 
 
 
+//homework2 Функция
 
 let seconds = 0;
 let interval ;
