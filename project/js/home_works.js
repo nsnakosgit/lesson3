@@ -69,3 +69,36 @@ const animateDiv = () => {
 };
 
 animateDivInterval = setInterval(animateDiv, 10);
+
+
+
+
+
+let seconds = 0;
+let interval ;
+
+const start = document.getElementById('start');
+const stop = document.getElementById('stop');
+const reset = document.getElementById('reset');
+const secondsDisplay = document.getElementById('seconds');
+
+
+
+start.addEventListener('click', () => {
+    clearInterval(interval); 
+    interval = setInterval(() => {
+        seconds++;
+        secondsDisplay.textContent = seconds < 10 ? '0' + seconds : seconds;
+    }, 1000);
+});
+
+stop.addEventListener('click', () => {
+    clearInterval(interval);
+});
+
+reset.addEventListener('click', () => {
+    clearInterval(interval);
+    seconds = 0;
+    secondsDisplay.textContent = '00';
+});
+
