@@ -336,14 +336,14 @@
 	border: 1px solid #fff;
 	margin: 0 auto;
 	border-radius: 20px;
-	height: 50px;
-	width: 400px;
+	height: 500px;
+	width: 500px;
 }
 .move_content{
 	position: absolute;
 	border: 1px solid #fff;
 	border-radius: 30px;
-	height: 48px;
+	height: 40px;
 	width: 50px;
 }
 /*----ANALOG CLOCK-----*/
