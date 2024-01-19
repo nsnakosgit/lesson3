@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#character-container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 30px;
+	gap: 5px;
+	justify-content: center;
+}
+
+.character-card{
+	height: 300px;
+	width: 250px;
+	border: 1px solid black;
+	border-radius: 30px;
+}
+
+.character-card img{
+	border-radius: 40px;
+	border: 1px solid black;
+	width: 210px;
+	height: 185px;
+	margin: 20px;
+	object-fit: cover;
+}
+.character-card h2 {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}

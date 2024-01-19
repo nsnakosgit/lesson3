@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Mahito",
+    "person_photo": "https://fox-guide.ru/wp-content/uploads/c6db27ebdab430232032864e9fb0b4ef.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kenjaku",
+    "person_photo": "https://radarjabar.disway.id/upload/9060a0619230c2c3605457ae57dfe8bf.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chōsō",
+    "person_photo": "https://i.pinimg.com/736x/c3/78/3e/c3783e1cade84902dfed18decd98cae9.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ryōmen Sukuna",
+    "person_photo": "https://i.pinimg.com/564x/4c/c0/bb/4cc0bb81790fd0ed9335e30f4a2669a9.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Nanami Kento",
+    "person_photo": "https://miro.medium.com/v2/resize:fit:738/1*k6MKmINkYFPottB0j4PLPw.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Tōdō Aoi",
+    "person_photo": "https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/12/14/jujutsu-kaisen-aoi-todo-1024x577.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Jōgo",
+    "person_photo": "https://i.pinimg.com/1200x/fb/3f/5d/fb3f5df96ca1e57f891f8ca7936a3092.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Tengen",
+    "person_photo": "https://fictionhorizon.com/wp-content/uploads/2023/07/Tengen1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Fushiguro Tōji",
+    "person_photo": "https://i.pinimg.com/736x/6a/01/80/6a01807ecb98cad14ead67c21273cb39.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Okkotsu Yūta",
+    "person_photo": "https://static.zerochan.net/Okkotsu.Yuuta.full.3310709.jpg"
+  }
+]
