@@ -72,3 +72,46 @@ tabsParent.onclick = (event) => {
         }, 3000);
     }
 }
+
+
+
+
+//conventer
+
+
+const somInput = document.querySelector('#som')
+const usdInput = document.querySelector('#usd')
+const eurInput = document.querySelector('#eur')
+
+const converter = (element, targetElement, currentValue) => {
+    element.oninput = () => {
+        const request = new XMLHttpRequest()
+        request.open('GET', '../data/currencies.json')
+        request.setRequestHeader('Content-type', 'application/json')
+        request.send()
+
+        request.onload = () => {
+            const data = JSON.parse(request.response)
+            switch (currentValue) {
+                case 'som':
+                    targetElement.value = (element.value / data.usd).toFixed(2)
+                    break
+                case 'usd':
+                    targetElement.value = (element.value * data.usd).toFixed(2)
+                    break
+                case 'eur':
+                    targetElement.value = (element.value * data.eur).toFixed(2)
+                    break
+                default:
+                    break
+            }
+            element.value === '' && (targetElement.value = '')
+        }
+    }
+}
+converter(somInput, usdInput,  'som')
+converter(usdInput, somInput, 'usd')
+converter(somInput, eurInput, 'som')
+converter(eurInput, somInput, 'eur')
+converter(eurInput, usdInput, 'eur')
+converter(usdInput, eurInput, 'usd')
