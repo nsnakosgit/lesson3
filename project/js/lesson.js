@@ -95,6 +95,7 @@ const converter = (element, targetElement, currentValue) => {
             switch (currentValue) {
                 case 'som':
                     targetElement.value = (element.value / data.usd).toFixed(2)
+                    targetElement.value = ( element.value / data.eur).toFixed(2)
                     break
                 case 'usd':
                     targetElement.value = (element.value * data.usd).toFixed(2)
