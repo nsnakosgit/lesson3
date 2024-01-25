@@ -115,7 +115,7 @@ converter(usdInput, somInput, 'usd')
 converter(somInput, eurInput, 'som')
 converter(eurInput, somInput, 'eur')
 
-
+//dz 6
 const card = document.querySelector('.card');
 const btmPrev = document.querySelector('#btn-prev');
 const btnNext = document.querySelector('#btn-next');
@@ -150,4 +150,13 @@ btmPrev.onclick = () => {
 };
 
 cardFetcher(count);
+
+
+
+//феч запрос
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
 
