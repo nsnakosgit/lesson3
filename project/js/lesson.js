@@ -114,3 +114,40 @@ converter(somInput, usdInput,  'som')
 converter(usdInput, somInput, 'usd')
 converter(somInput, eurInput, 'som')
 converter(eurInput, somInput, 'eur')
+
+
+const card = document.querySelector('.card');
+const btmPrev = document.querySelector('#btn-prev');
+const btnNext = document.querySelector('#btn-next');
+
+let count = 1;
+
+const cardFetcher = (id) => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then(response => response.json())
+        .then(data => {
+            card.innerHTML =
+                `<p>${data.title}</p>
+                <p style="color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+                <span>${data.id}</span>`;
+        });
+};
+
+btnNext.onclick = () => {
+    count++;
+    if(count > 200) {
+        count = 1;
+    }
+    cardFetcher(count);
+};
+
+btmPrev.onclick = () => {
+    count--;
+    if(count < 1) {
+        count = 200;
+    }
+    cardFetcher(count);
+};
+
+cardFetcher(count);
+
