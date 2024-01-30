@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/home_works.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="inner_header">
+                    <a href="../index.html">
+                        <div class="logotype">
+                            <h2>Java<span>Script</span></h2>
+                        </div>
+                    </a>
+                    <ul class="menu">
+                        <li class="menu_link">
+                            <a href="../pages/home_works.html">Home Works</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="../pages/lessons.html">Lessons</a>
+                        </li>
+                        <li class="menu_link" >
+                            <a href="../pages/lessons.html">Carts</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="https://t.me/nsnakos" target="_blank">Send hw</a>
+                        </li>
+                    </ul>
+                    <button class="btn" id="btn-get">Click me!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="gmail_block">
+            <div class="container" id="container">
+                <h3>Home work 1 (part 1)</h3>
+                <div class="inner_gmail_block" id="gmail_container">
+                    <div class="inner_gmail_conatiner" >
+                        <div class="form_container sign_up">
+                            <form>
+                                <h1 class="gmail_h1">Зарегистрироваться</h1>
+                                <div class="social_icons">
+                                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                                <span>Используйте свой адрес электронной почты для регистрации</span>
+                                <input class="input_text"  id="input_text1" placeholder="Name">
+                                <input class="input_email1" id="input_email1"  type="email" placeholder="Email">
+                                <input class="input_password1" id="input_password1" type="password" placeholder="Password">
+                                <button id="input_button1" >Зарегистрироваться</button>
+                                <span class="checker" id="gmail_result"></span>
+                            </form>
+                        </div>
+                        <div class="form_container sign_in">
+                            <form>
+                                <h1 class="gmail_h1">Войти</h1>
+                                <div class="social_icons">
+                                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                                <span>Используйте пароль своей электронной почты</span>
+                                <input class="input_email" id="input_email" type="email" placeholder="Email">
+                                <input class="input_password" id="input_password" type="password" placeholder="Password">
+                                <a class="sing_aa" href="#">Забыли свой пароль?</a>
+                                <button class="input_button" id="input_button">Войти</button>
+                                <span class="checkee" id="gmail_result1"></span>
+                            </form>
+                        </div>
+                        <div class="toggle_container">
+                            <div class="toggle">
+                                <div class="toggle_panel toggle_left">
+                                    <h1 class="gmail_h2">Добро пожаловать!</h1>
+                                    <p>Введите свои личные данные, чтобы использовать все возможности  сайта</p>
+                                    <button class="hidden" id="login">Войти</button>
+
+                                </div>
+                                <div class="toggle_panel toggle_right">
+                                    <h1 class="gmail_h2">Привет, друг!</h1>
+                                    <p>Зарегистрируйтесь, указав свои личные данные, чтобы использовать все функции сайта.</p>
+                                    <button class="hidden" id="register">Зарегистрироваться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="move_block">
+            <div class="container">
+                <div class="blok">
+                    <div class="blokinner">
+                        <h3 class="text">Home work 1 (part 2)</h3>
+                    </div>
+                </div>
+
+                <div class="solar_system">
+                    <div class="earth" id="earth">
+                        <img src="../images/earth_night.png" alt="earth">
+                    </div>
+                    <div class="earth_one">
+                        <img class="earth_two" src="../images/earth.png" alt="earth">
+                        <img class="moon" id="moon" src="../images/moon.png" alt="moon">
+                    </div>
+                </div>
+                <div class="move_inner_blok" >
+                    <div class="move_content" ></div>
+                    <div class="move_content1" ></div>
+                </div>
+            </div>
+
+            <div class="stopwatch">
+                <div class="container">
+                    <h3>Home work 2 </h3>
+                    <div class="time">
+                        <div class="time_block">
+                            <div class="interval" id="seconds">00</div>
+                        </div>
+                    </div>
+                    <div class="time_buttons">
+                        <button class="btn" id="start">Start</button>
+                        <button class="btn" id="stop">Stop</button>
+                        <button class="btn" id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal">
+            <div class="modal_dialog">
+                <div class="modal_content">
+                    <form action="#">
+                        <div class="modal_close">&times;</div>
+                        <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                        <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                        <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/home_works.js"></script>
+<script src="../js/modal.js"></script>
+</html>
